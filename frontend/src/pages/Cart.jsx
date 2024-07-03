@@ -10,6 +10,8 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
+  cartItems.map((item) => console.log(item.countInStock));
+
   const addToCartHandler = (product, qty) => {
     dispatch(addToCart({ ...product, qty }));
   };

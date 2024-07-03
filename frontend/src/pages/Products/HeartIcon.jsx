@@ -41,12 +41,11 @@ const HeartIcon = ({ product }) => {
       className="absolute top-2 right-5 cursor-pointer"
       onClick={toggleFavorites}
     >
-      {/* {isFavorite ? (
+      {isFavorite ? (
         <FaHeart className="text-pink-500" />
       ) : (
-        <FaRegHeart className="text-white" />
-      )} */}
-      Fav
+        <FaRegHeart className="text-black" />
+      )}
     </div>
   );
 };
